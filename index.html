@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clevertap Tech Assessment - Website</title>
+
+    <script type="text/javascript">
+      var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+      // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+      clevertap.account.push({"id": "6KZ-ZZ6-Z95Z"});
+      clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+      clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+      (function () {
+        var wzrk = document.createElement('script');
+        wzrk.type = 'text/javascript';
+        wzrk.async = true;
+        wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js?v=0';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wzrk, s);
+      })();
+    </script>
+
+    <script src="site.js"></script>
+
+  </head>
+
+  <body>
+    <a href="index.html">Home</a>
+
+    <h1>Welcome to Clevertap Tech Assessment - for Website</h1>
+
+    <div id="main-content">
+      <label for="email-suffix">Name for email:*</label>
+      <input type="text" id="email-suffix" name="email-suffix" autocomplete="off" required><br><br>
+      <button type="button" onclick="triggerEvent()">Confirm Product Viewed</button>
+    </div>
+
+  </body>
+</html>
